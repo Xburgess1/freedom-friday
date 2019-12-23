@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Path 1</title>
+    <link rel="stylesheet" type="text/css" href="level2Stylesheet.css" />
+</head>
+<body onload="setupFinal()">
+
+    <script src="lvl2Script.js"></script>
+
+    <header>
+        <div id="lvl2Header">
+            <h1>The Door</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><input id="lvlTwoLock" placeholder="code" size="20" maxlength="20"></li>
+            <li><button id="twoFinal" onclick="lvlTwoEnd()">CLICK ME</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div align="center" id="allLight">
+            <ul id="lights">
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+                <li class="lightList"></li>
+            </ul>
+        </div>
+
+        <br/>
+
+        <div align="center" id="allBtns">
+            <ul id="btns">
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li> 
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li>
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li>
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li>
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li>
+                <li><button class="lightButtons" id="inactive" onclick="setActive(this)"></button></li>
+            </ul>
+        </div>
+
+        <div id="solutionText">
+            <p>Flick the switches in positions 2, 3, and 6. Look at the lights, convert it to binary, black = 0, green = 1. Change
+            the binary to decimal and put that number where the code goes.</p>
+        </div>
+
+    </main>
+    
+</body>
+</html>

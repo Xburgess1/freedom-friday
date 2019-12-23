@@ -1,0 +1,289 @@
+﻿body {
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+main, nav {
+    margin: 0% 15%;
+}
+
+#lvl2Header {
+    text-align: center;
+    color: white;
+    background-color: #370752;
+    font-size: 32px;
+    width: 100%;
+    height: 80px;
+    margin-top: -43px;
+}
+
+nav ul {
+    background-color: rebeccapurple;
+    height: Calc(30px + 3.8vh);
+    margin-top: -0px;
+    box-sizing: border-box;
+    border: 4px solid #370752;
+}
+
+    nav ul li {
+        list-style: none;
+        float: left;
+    }
+
+nav button {
+    width: Calc(8px + 7.4vw);
+    height: Calc(9px + 4.3vh);
+    font-size: Calc(8px + 0.7vw);
+    background-color: white;
+    border: 3px solid #5a5a5a;
+    margin-top: 0.6vh;
+    border-radius: 15vw;
+}
+
+    nav button:hover, nav button:focus {
+        background-color: #4d4d4d;
+        color: whitesmoke;
+    }
+
+#path1 {
+    margin-right: 50%;
+    margin-left: 12%;
+}
+
+.text {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+#box2 {
+    margin-left: 5%;
+}
+
+
+#text1 {
+    position: relative;
+    width: Calc(30px + 20vw);
+    height: Calc(50px + 22vh);
+    padding: 12px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 8px;
+    font-size: Calc(10px + 0.7vw);
+    overflow: auto;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+#text2 {
+    position: relative;
+    width: Calc(30px + 20vw);
+    height: Calc(110px + 22vh);
+    padding: 12px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 8px;
+    font-size: Calc(10px + 0.7vw);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #51287a;
+    }
+
+
+/*Two-a.1 code*/
+
+#impossBox{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    height: 700px;
+}
+
+#impossText{
+    
+    font-size: 20px;
+    
+}
+
+#lvlTwoLock {
+    margin-top: 10px;
+    width: 130px;
+    height: 20px;
+    border: 3px solid #370752;
+    font-size: 17px;
+}
+
+#allLight {
+    height: 210px;
+    display: flex;
+    align-content: center;
+}
+
+#lights {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    #lights li {
+        width: 90px;
+        height: 230px;
+        background-color: black;
+        float: left;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+.lightList {
+    position: relative;
+}
+
+#allBtns {
+    display: flex;
+    align-content: center;
+}
+
+#btns {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    #btns li {
+        float: left;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        margin-top: 2%;
+    }
+
+.lightButtons {
+    width: 90px;
+    height: 50px;
+    position: relative;
+    background-color: #2336db;
+    border: 5px solid black;
+}
+
+    .lightButtons:hover, .lightButtons:focus {
+        background-color: #6970f0;
+        cursor: pointer;
+    }
+
+#active {
+    width: 90px;
+    height: 50px;
+    position: relative;
+    background-color: #1a356b;
+    border: 5px solid black;
+}
+
+#solutionText {
+    text-align: center;
+    background-color: white;
+    margin-top: 2vh;
+    border: 5px solid black;
+    font-size: 18px;
+}
+
+/*Two-a.2 code*/
+
+#allLight2 {
+    height: auto;
+    display: flex;
+    align-content: center;
+    margin-left: 4.5%;
+}
+
+#lights2 {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+    #lights2 li {
+        width: 30px;
+        height: 115px;
+        background-color: black;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+
+.lightList2 {
+    position: relative;
+}
+
+#allBtns2 {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    margin-left: 2.5%;
+}
+
+#btns2 {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    #btns2 li {
+        float: left;
+        margin-left: .6%;
+        margin-right: .6%;
+        margin-top: 2%;
+    }
+
+#inactive.lightButtons2 {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    background-color: #2336db;
+    border: 5px solid black;
+}
+
+    #inactive.lightButtons2:hover, #inactive.lightButtons2:focus {
+        background-color: #6970f0;
+        cursor: pointer;
+    }
+
+#active.lightButtons2 {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    background-color: #1a356b;
+    border: 5px solid black;
+}
+
+    #active.lightButtons2:hover, #inactive.lightButtons2:focus {
+        cursor: pointer;
+    }
+
+

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Annihilation</title>
+    <link rel="stylesheet" type="text/css" href="annihilationStylesheet.css" media="screen" />
+
+    <style>
+        body {
+            position: relative;
+            z-index: 0;
+        }
+
+        /**All of the CSS below is used to style the flip card on the bonus level. box2Inner is styled to be positioned relative to box2
+        and sets the transition to transform the box and that the transition will take 0.3secs. Then the transform-style to preserve-3d
+        so that the object is not flat, and stays a 3d object.
+
+        .box2:hover .box2Inner is styled so that when the box is being hovered on the object will rotate on the Y-axis a full 180 degrees
+
+        .box2Front, .box2Back is styled so that the front and the back are the correct size and that the backside of the box is hidden
+
+        .box2Back is styled so that the back of the box is on the back side by rotating it.
+        */
+        .box2Inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.3s;
+            transform-style: preserve-3d;
+            -webkit-transition: transform 0.3s;
+            -moz-transition: transform 0.3s;
+            -o-transition: transform 0.3s;
+            -webkit-transform-style: preserve-3d;
+            z-index: 2;
+        }
+
+        .box2:hover .box2Inner {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            z-index: 2;
+        }
+
+        .box2Front, .box2Back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            z-index: 2;
+        }
+
+        .box2Front {
+            background-color: #6245e6;
+            color: black;
+            z-index: 2;
+        }
+
+        .box2Back {
+            background-color: #6245e6;
+            color: black;
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+<body onload="bonusSetUp()">
+    <script src="bonusScript.js"></script>
+
+    <header>
+        <h1>Annihilation</h1>
+        <div id="box1"></div>
+
+        <div class="box2">
+            <div class="box2Inner">
+                <div class="box2Front">
+                    <p>Code</p>
+                </div>
+                <div class="box2Back">
+                    <input id="underline" placeholder="underlined" size="11" maxlength="4" />
+                </div>
+            </div>
+        </div>
+
+        <div class="box3"></div>
+        <div id="box4">
+            <p id="time"></p>
+        </div>
+        <div id="box5"></div>
+    </header>
+
+    <br />
+    <br />
+    <br />
+
+    <main>
+        <div class="mainText">
+            <p>
+                <b>C</b>odes h<i>a</i>v<i>e</i> been u<b>s</b>ed throughout th<u>e</u> ye<b>a</b>rs, and e<i>a</i>ch one is diffe<b>r</b>ent. Some use dice, some use just 1s and
+                0s. <i>C</i>ont<b>i</b>nue <b>t</b>o look and <i>p</i>eer at everything, foc<u>u</u>s closely and don't ov<u>e</u>r think; <i>h</i>er<b>e</b> take thi<u>s</u>. A f<b>r</b>ee button.
+                <button id="freeButton" onclick="undoHidden()">FREE</button>
+            </p>
+        </div>
+
+        <div class="midText">
+            <p>
+                I traveled from a distant land, a <u>p</u>lace where skyscrapers fly <u>p</u>ast the sky, where stars are just rocket fuel. Life is endless
+                and we control it. I come from a distant land, where everthing is artificial and nothing is real. I come from a distant land
+                where a family vacation is a trip into a black hole, where planets are just use<u>d</u> for harvesting. I come from a distant land
+                that no longer exists. Why? Because we killed it all.
+            </p>
+        </div>
+
+        <div id="hiddenText">
+
+            <ul>
+                <li>B</li>
+                <li>I</li>
+                <li>I</li>
+                <li>B</li>
+                <li>Skip</li>
+                <li>B</li>
+                <li>Skip</li>
+                <li>B</li>
+                <li>I</li>
+                <li>B</li>
+                <li>Skip</li>
+                <li>I</li>
+                <li>Skip</li>
+                <li>Skip</li>
+                <li>I</li>
+                <li>B</li>
+                <li>Skip</li>
+                <li>B</li>
+            </ul>
+        </div>
+
+        <div class="impossibleText">
+            <p>
+                I see you. You are here now, with no escape, the clock is ticking. It won't stop ticking until it reaches the end, 0:00:00.
+                When that happens it will be over, nothing, everything gone. The button taunts you, but you can't press it, it is out of reach.
+                "Why" You ask, "Why can't the button be unlocked? Maybe at a certain time the button will unlock." Nope, it won't unlock and
+                never will. You just have to wait until the time runs. You may be saying, "Maybe this is incomplete, maybe I will win once the
+                time runs out." It will never open, congratulations you get to look at a button.
+            </p>
+        </div>
+
+        <p id="hidText"><span style="color: #ebebeb;">NoCodeHere</span></p>
+
+    </main>
+
+    <nav>
+        <ul>
+            <li><input id="lock1" placeholder="Ehklqg Wki Frgh" size="15" maxlength="15" /></li>
+            <li><input id="lock2" placeholder="Rearrange Underlines" size="20" maxlength="20" /></li>
+            <li><button id="finalBtn">Final</button> </li>
+        </ul>
+    </nav>
+
+    <div id="botBorder"></div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<!--
+  Name: Xavier Burgess
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: PTEC
+  Date Last Modified: November 16th, 2019
+  Important Notes: Use Microsoft Edge to open the website due to some minor issues with the bonus level and Chrome
+-->
+<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="homePageStyle.css" />
+</head>
+<body>
+    <header>
+        <div class="headingBox">
+            <h1 class="heading">The Website Game</h1>
+        </div>
+        <br />
+    </header>
+    <main>
+        <div class="descBox">
+            <h3>Description</h3>
+            <div class="descText">
+                <p>
+                    This is a game using websites. In this game you will be hopping <br />from website to website. Each level is a collection of
+                    web pages <br />with puzzles for you to solve. Once all the puzzles have been <br />solved you will be able to reach the final page and
+                    go to the next <br />level.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="entireBonus">
+            <div class="bonusHead">
+                <p>???</p>
+            </div>
+
+            <div class="bonusBox">
+                <ul>
+                    <li><a href="bonus-levels/first-level/annihilation.html">Annihilation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rulesBox">
+            <h3>Rules</h3>
+            <ol type="I" class="rulesText">
+                <li>Using the inspect tool is not allowed (Unless you want to be known as the person who cheated a puzzle game)</li>
+                <li>Using outside resources to solve puzzles is encouraged</li>
+                <li>Play the levels in order</li>
+                <li>You are allowed to have different sections of a level open in different tabs</li>
+            </ol>
+        </div>
+        <br />
+
+        <div class="info">
+            <h3>What You Need To Know</h3>
+            <p>
+                In this game there are certain topics that may be unfamiliar to some people. Here are some topics you may want to know before diving in.
+                <ul>
+                    <li>Binary - Binary are a series of 1s and 0s, together they look something like this - 110100110. They are not always in this order,
+                    the 1s and 0s can be in any order. You can look up a binary converter, once you have a binary converter, convert the binary into 
+                    decimal. 110100110 translates into 422.</li>
+                    <li>Hexadecimal - Hexadecimal use 16 different characters to display numbers. The characters they use are 0-9 and A-F. Hexadecimal 
+                    would look something like this - B69. The 16 characters can be in any order. You can look up a hexadecimal converter, once you have
+                    found one you can convert the hexadecimal into decimal. B69 translates into 2921.</li>
+                    <li>Morse Code - Morse Code is a character encoding scheme. Morse code is made up of dots and dashes or dits and dahs. Morse code will
+                    look something like this: ---.. .----, these dots and dashes can be in any order. The space represents the different characters. You
+                    can look up a Morse Code translator to translate the Morse Code into proper words and numbers. ---.. .---- translates to 81.</li>
+                </ul>
+            </p>
+        </div>
+
+        <br/>
+
+        <h3 class="lvlText">Levels</h3>
+    </main>
+
+    <nav>
+        <div class="lvl1Button">
+            <button style="border-top-left-radius: 13px;
+                border-top-right-radius: 13px;
+                font-size: 20px;"
+                    onclick="window.location.href='level-one/one-a.html'">
+                First Level
+            </button>
+        </div>
+        <div class="lvl2Button">
+            <button style="font-size: 20px;" onclick="window.location.href='level-two/two-a.html'">Level Two</button>
+        </div>
+
+    </nav>
+    <br/>
+    <p></p>
+
+</body>
+</html>
