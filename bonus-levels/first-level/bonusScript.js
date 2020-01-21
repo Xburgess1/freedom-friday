@@ -55,7 +55,7 @@ function checkFlipCode()
     var c = document.getElementsByClassName("box3")[0];
     var animText = document.getElementById("hidText");
 
-    if(code == "123" && animPlayed == false)
+    if(code == "eues" && animPlayed == false)
     {
         c.className += "-animation";
         animPlayed = true;
@@ -74,12 +74,12 @@ function solveCipher()
     var midText = document.getElementsByClassName("midText")[0];
     var rearrange = document.getElementById("lock2");
 
-    if(ceasar == "1234")
+    if(ceasar == "Behind The Code")
     {
         boxBack.hidden = false;
     }
 
-    if(ceasar == "?????")
+    if(ceasar == "3ja29")
     {
         midText.hidden = false;
         rearrange.hidden = false;
@@ -95,7 +95,7 @@ function rearrangeUnder()
     var final = document.getElementById("finalBtn");
     var finalText = document.getElementsByClassName("impossibleText")[0];
 
-    if(rearrange == "123")
+    if(rearrange == "speedup")
     {
         final.hidden = false;
         final.disabled = true;

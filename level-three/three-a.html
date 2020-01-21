@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>LEVEL THREE</title>
+</head>
+<body onload="completeTrial()">
+
+    <h1>LEVEL THREE</h1>
+    <p><b>If you have followed the rules and only played levels one and two this will be the hardest</b></p>
+    <p>Level three has multiple paths to take, it also has lots of codes</p>
+    <p>Your first test it to type the two most common words on this webpage (no space)</p>
+    <br/>
+    <input id="trial" placeholder="Trail" size="15" maxlength="15">
+    <br/>
+    <button id="trialBtn">Begin</button>
+
+    <script type="text/javascript">
+        setInterval(completeTrial, 200);
+
+        function completeTrial()
+        {
+            var text = document.getElementById("trial").value;
+            var bttn = document.getElementById("trialBtn");
+
+            if(text == "LEVELTHREE")
+            {
+                bttn.disabled = false;
+            }
+            else
+            {
+                bttn.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
